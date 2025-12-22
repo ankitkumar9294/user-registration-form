@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3564bb, #1f3e74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #e6dede;
+    padding: 25px;
+    min-height: 600px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3c72;
+}
+.title-line {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+input:hover{
+    border: 1px solid red;
+}
+textarea:hover{
+    border: 1px solid red;
+}
+
+textarea {
+    resize: none;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #1c386d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background: #511f75;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    min-height: 250px;
+    
+}
+.preview-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 12px 0;     
+    margin-bottom: 20px;    
+
+    border-bottom: 3px solid #1e3c72;
+    border-image: linear-gradient(to right, #1e3c72, #2a5298) 1;
+    line-height: 1.4;
+    color: #1e3c72;
+}
+
+#previewData p {
+    margin-bottom: 12px;
+    line-height: 1.5;    
+}
+
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;   
+    margin-top: 20px; 
+}
+
+.modal-buttons button {
+    flex: 1;   
+}
+#submitBtn:hover{
+   background-color: green;
+}
+#closeBtn:hover{
+    background-color: red;
+}
+@media (max-width: 480px) {
+    .container {
+        margin: 15px;
+    }
+}
