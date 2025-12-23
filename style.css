@@ -53,10 +53,10 @@ input, textarea {
     border: 1px solid blue;
 }
 input:hover{
-    border: 1px solid red;
+    border: 2px solid blue;
 }
 textarea:hover{
-    border: 1px solid red;
+    border: 2px solid blue;
 }
 
 textarea {
@@ -151,3 +151,4 @@ button:disabled {
         margin: 15px;
     }
 }
+
