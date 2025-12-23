@@ -74,13 +74,13 @@ button {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background: #1c386d;
+    background: #356cd1;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 button:hover{
-    background: #511f75;
+    background: #1d3b72;
 }
 
 button:disabled {
@@ -151,4 +151,5 @@ button:disabled {
         margin: 15px;
     }
 }
+
 
